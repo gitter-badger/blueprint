@@ -22,3 +22,5 @@
 - homebrew_cask: name=sonos state=present
 - homebrew_cask: name=totalfinder state=present
 - homebrew_cask: name=vlc state=present
+- osx_defaults: domain={{ item.domain }} key={{ item.key }} type={{ item.type }} value={{ item.value }} state={{ item.state }}
+  with_items: osx_defaults_values
