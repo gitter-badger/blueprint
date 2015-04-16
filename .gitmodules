@@ -1,0 +1,3 @@
+[submodule "roles/osx-defaults"]
+	path = roles/osx-defaults
+	url = https://github.com/andystanton/ansible-role-osx-defaults.git
