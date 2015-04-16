@@ -1,0 +1,3 @@
+- homebrew: name=tomcat state=present
+- homebrew: name=redis state=present
+- homebrew: name=mongodb state=present

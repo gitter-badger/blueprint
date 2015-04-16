@@ -1,6 +1,6 @@
 # Blueprint
-Configuration for my machine
 
+Configuration for my machine
 
 # Instructions
 

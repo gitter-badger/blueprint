@@ -1,0 +1,4 @@
+---
+- homebrew_tap: tap=homebrew/dupes,homebrew/completions,homebrew/versions state=present
+- homebrew_tap: tap=caskroom/cask,caskroom/fonts,caskroom/versions state=present
+- homebrew: update_homebrew=yes upgrade_all=yes
