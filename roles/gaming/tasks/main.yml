@@ -1,0 +1,5 @@
+---
+
+# Install Homebrew Cask dependencies
+- homebrew_cask: name={{ item }} state=present
+  with_items: gaming_homebrew_cask_dependencies

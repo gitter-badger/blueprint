@@ -1,0 +1,20 @@
+---
+
+# Install Homebrew dependencies
+- homebrew: name={{ item }} state=present
+  with_items: workstation_homebrew_dependencies
+
+
+# Install Homebrew Cask dependencies
+- homebrew_cask: name={{ item }} state=present
+  with_items: workstation_homebrew_cask_dependencies
+
+
+# Set OSX defaults
+- osx_defaults:
+      domain={{ item.domain }}
+      key={{ item.key }}
+      type={{ item.type }}
+      value={{ item.value }}
+      state={{ item.state }}
+  with_items: osx_defaults_values

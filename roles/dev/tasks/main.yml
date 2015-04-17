@@ -1,0 +1,10 @@
+---
+
+# Install Homebrew dependencies
+- homebrew: name={{ item }} state=present
+  with_items: dev_homebrew_dependencies
+
+
+# Install Homebrew Cask dependencies
+- homebrew_cask: name={{ item }} state=present
+  with_items: dev_homebrew_cask_dependencies

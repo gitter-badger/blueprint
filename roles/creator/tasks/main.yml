@@ -1,5 +1,0 @@
----
-- homebrew_cask: name=audacity state=present
-- homebrew_cask: name=blender state=present
-- homebrew_cask: name=screenflick state=present
-- homebrew_cask: name=sunvox state=present

@@ -1,0 +1,7 @@
+---
+
+# Homebrew dependencies
+bbc_homebrew_dependencies:
+  - tomcat
+  - redis
+  - mongodb

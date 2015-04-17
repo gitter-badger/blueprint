@@ -1,5 +1,38 @@
 ---
 
+# Homebrew dependencies
+workstation_homebrew_dependencies:
+  - tomcat
+  - redis
+  - mongodb
+
+
+# Homebrew Cask dependencies
+workstation_homebrew_cask_dependencies:
+  - 1password
+  - alfred
+  - atom
+  - bartender
+  - caffeine
+  - chromecast
+  - cinch
+  - dropbox
+  - evernote
+  - flux
+  - google-chrome
+  - google-drive
+  - iterm2
+  - keka
+  - lunchy
+  - music-manager
+  - plug
+  - radiant-player
+  - skype
+  - sonos
+  - totalfinder
+  - vlc
+
+
 # Defaults that require Finder to be restarted
 osx_defaults_finder_values:
 
@@ -31,7 +64,7 @@ osx_defaults_system_ui_server_values:
       "key": "AppleInterfaceStyle",
       "type": "string",
       "value": "Dark",
-      "state": "present"
+      "state": "absent"
     }
 
   # Add a context menu item for showing web inspector in web views

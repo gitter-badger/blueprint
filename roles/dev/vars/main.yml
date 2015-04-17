@@ -1,0 +1,36 @@
+---
+
+# Homebrew dependencies
+dev_homebrew_dependencies:
+  - awscli
+  - bats
+  - boot2docker
+  - cmake
+  - docker
+  - docker-compose
+  - gist
+  - git
+  - hub
+  - jenv
+  - jq
+  - maven
+  - node
+  - ruby
+  - rust
+  - sbt
+  - scala
+  - xmlstarlet
+
+
+# Homebrew Cask dependencies
+dev_homebrew_cask_dependencies:
+  - cyberduck
+  - cornerstone
+  - intellij-idea-ce
+  - java
+  - java6
+  - java7
+  - slack
+  - sourcetree
+  - vagrant
+  - virtualbox

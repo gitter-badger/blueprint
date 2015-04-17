@@ -1,0 +1,12 @@
+---
+
+# Homebrew dependencies
+creativity_homebrew_dependencies:
+  - gifsicle
+
+# Homebrew Cask dependencies
+creativity_homebrew_cask_dependencies:
+  - audacity
+  - blender
+  - screenflick
+  - sunvox

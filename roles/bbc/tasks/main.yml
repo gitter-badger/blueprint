@@ -1,3 +1,5 @@
-- homebrew: name=tomcat state=present
-- homebrew: name=redis state=present
-- homebrew: name=mongodb state=present
+---
+
+# Install Homebrew dependencies
+- homebrew: name={{ item }} state=present
+  with_items: bbc_homebrew_dependencies

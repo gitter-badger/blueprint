@@ -1,0 +1,5 @@
+---
+
+# Gaming Homebrew Cask dependencies
+gaming_homebrew_cask_dependencies:
+  - steam

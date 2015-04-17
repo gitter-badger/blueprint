@@ -1,0 +1,9 @@
+---
+
+# Install Homebrew dependencies
+- homebrew: name={{ item }} state=present
+  with_items: creativity_homebrew_dependencies
+
+# Install Homebrew Cask dependencies
+- homebrew_cask: name={{ item }} state=present
+  with_items: creativity_homebrew_cask_dependencies

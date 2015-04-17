@@ -2,8 +2,8 @@
 - hosts: localhost
   roles:
     - common
-    - user
-    - developer
-    - creator
+    - workstation
+    - dev
+    - creativity
     - bbc
     - osx-defaults

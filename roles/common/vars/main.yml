@@ -1,0 +1,14 @@
+---
+
+# Homebrew taps
+common_homebrew_taps:
+  - homebrew/dupes
+  - homebrew/completions
+  - homebrew/versions
+
+
+# Homebrew Cask taps
+common_homebrew_cask_taps:
+  - caskroom/cask
+  - caskroom/fonts
+  - caskroom/versions
