@@ -36,10 +36,73 @@ workstation_homebrew_cask_dependencies:
 # Defaults that require Finder to be restarted
 osx_defaults_finder_values:
 
-  # Show hidden files in Finder
+  # Show hidden files
   - {
       "domain": "com.apple.finder",
       "key": "AppleShowAllFiles",
+      "type": "boolean",
+      "value": true,
+      "state": "present"
+    }
+
+  # Show file extensions
+  - {
+      "domain": "com.apple.finder",
+      "key": "AppleShowAllExtensions",
+      "type": "boolean",
+      "value": true,
+      "state": "present"
+    }
+
+  # Search only the current folder by default
+  - {
+      "domain": "com.apple.finder",
+      "key": "FXDefaultSearchScope",
+      "type": "string",
+      "value": "SCcf",
+      "state": "present"
+    }
+
+  # Disable warning when changing file extension
+  - {
+      "domain": "com.apple.finder",
+      "key": "FXEnableExtensionChangeWarning",
+      "type": "boolean",
+      "value": false,
+      "state": "present"
+    }
+
+  # Use list view by default
+  - {
+      "domain": "com.apple.finder",
+      "key": "FXPreferredViewStyle",
+      "type": "string",
+      "value": "Nlsv",
+      "state": "present"
+    }
+
+  # New Finder window shows user home folder 1/2
+  - {
+      "domain": "com.apple.finder",
+      "key": "NewWindowTarget",
+      "type": "string",
+      "value": "PfHm",
+      "state": "present"
+    }
+
+  # New Finder window shows user home folder 2/2
+  - {
+      "domain": "com.apple.finder",
+      "key": "NewWindowTargetPath",
+      "type": "string",
+      "value": "file://localhost/Users/{{ ansible_ssh_user }}/",
+      "state": "present"
+    }
+
+  # Show path bar
+  - {
+      "domain": "com.apple.finder",
+      "key": "ShowPathbar",
       "type": "boolean",
       "value": true,
       "state": "present"
@@ -58,6 +121,7 @@ osx_defaults_system_ui_server_values:
       "state"   : "present"
     }
 
+  # TODO: add condition so this only runs for Yosemite
   # Use Dark theme in Yosemite
   - {
       "domain": "NSGlobalDomain",
@@ -94,14 +158,105 @@ osx_defaults_system_ui_server_values:
       "state"   : "present"
     }
 
+  # Set scaling effect for dock
+  - {
+      "domain"  : "com.apple.dock",
+      "key"     : "mineffect",
+      "type"    : "string",
+      "value"   : "scale",
+      "state"   : "present"
+    }
+
+  # Position dock on left side
+  - {
+      "domain"  : "com.apple.dock",
+      "key"     : "orientation",
+      "type"    : "string",
+      "value"   : "left",
+      "state"   : "present"
+    }
+
+  # Show status indicators for open application icons in dock
+  - {
+      "domain"  : "com.apple.dock",
+      "key"     : "show-process-indicators",
+      "type"    : "boolean",
+      "value"   : true,
+      "state"   : "present"
+    }
+
+  # Show date in menu bar clock
+  - {
+      "domain"  : "com.apple.menuextra.clock",
+      "key"     : "DateFormat",
+      "type"    : "string",
+      "value"   : "\"EEE MMM d  HH:mm\"",
+      "state"   : "present"
+    }
+
 
 # Defaults that require no further action
 osx_defaults_values:
+
+  # Save to disk by default rather than iCloud
+  - {
+      "domain": "NSGlobalDomain",
+      "key": "NSDocumentSaveNewDocumentsToCloud",
+      "type": "boolean",
+      "value": false,
+      "state": "present"
+    }
+
+
+  # Expand save dialog by default
+  - {
+      "domain": "NSGlobalDomain",
+      "key": "NSNavPanelExpandedStateForSaveMode",
+      "type": "boolean",
+      "value": true,
+      "state": "present"
+    }
 
   # Check for updates daily
   - {
       "domain": "com.apple.SoftwareUpdate",
       "key": "ScheduleFrequency",
+      "type": "integer",
+      "value": 1,
+      "state": "present"
+    }
+
+  # Capture screenshots to png
+  - {
+      "domain": "com.apple.screencapture",
+      "key": "type",
+      "type": "string",
+      "value": "png",
+      "state": "present"
+    }
+
+  # Tap to click 1/3
+  - {
+      "domain": "com.apple.driver.AppleBluetoothMultitouch.trackpad",
+      "key": "Clicking",
+      "type": "boolean",
+      "value": true,
+      "state": "present"
+    }
+
+  # Tap to click 2/3
+  - {
+      "domain": "NSGlobalDomain",
+      "key": "com.apple.mouse.tapBehavior",
+      "type": "integer",
+      "value": 1,
+      "state": "present"
+    }
+
+  # Tap to click 3/3
+  - {
+      "domain": "NSGlobalDomain",
+      "key": "com.apple.mouse.tapBehaviour",
       "type": "integer",
       "value": 1,
       "state": "present"
