@@ -6,10 +6,11 @@ Configuration for my machine
 
 1. Install ansible
 2. Get dependencies:
-```sh
-$ ansible-galaxy install hnakamur.osx-defaults
-```
+  ```sh
+  $ ansible-galaxy install hnakamur.osx-defaults
+  ```
+  
 3. Execute the following ```ansible-playbook``` command:
-```sh
-$ ansible-playbook -i "local," blueprint.yml
-```
+  ```sh
+  $ ansible-playbook -i "local," blueprint.yml
+  ```

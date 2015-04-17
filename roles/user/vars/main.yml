@@ -1,8 +1,75 @@
 ---
+
+# Defaults that require Finder to be restarted
 osx_defaults_finder_values:
-  - { domain: com.apple.finder, key: AppleShowAllFiles, type: boolean, value: true, state: present }
-  - { domain: NSGlobalDomain, key: WebKitDeveloperExtras, type: boolean, value: true, state: present }
+
+  # Show hidden files in Finder
+  - {
+      "domain": "com.apple.finder",
+      "key": "AppleShowAllFiles",
+      "type": "boolean",
+      "value": true,
+      "state": "present"
+    }
+
+
+# Defaults that require the UI Server to be restarted
 osx_defaults_system_ui_server_values:
- - { domain: com.apple.screencapture, key: disable-shadow, type: boolean, value: true, state: absent }
+
+  # Disable natural scroll direction
+  - {
+      "domain"  : "NSGlobalDomain",
+      "key"     : "com.apple.swipescrolldirection",
+      "type"    : "boolean",
+      "value"   : false,
+      "state"   : "present"
+    }
+
+  # Use Dark theme in Yosemite
+  - {
+      "domain": "NSGlobalDomain",
+      "key": "AppleInterfaceStyle",
+      "type": "string",
+      "value": "Dark",
+      "state": "present"
+    }
+
+  # Add a context menu item for showing web inspector in web views
+  - {
+      "domain": "NSGlobalDomain",
+      "key": "WebKitDeveloperExtras",
+      "type": "boolean",
+      "value": true,
+      "state": "present"
+    }
+
+  # Don't display dashboard as a space pre-Yosemite
+  - {
+      "domain"  : "com.apple.dock",
+      "key"     : "dashboard-in-overlay",
+      "type"    : "boolean",
+      "value"   : true,
+      "state"   : "present"
+    }
+
+  # Auto hide the dock
+  - {
+      "domain"  : "com.apple.dock",
+      "key"     : "autohide",
+      "type"    : "boolean",
+      "value"   : true,
+      "state"   : "present"
+    }
+
+
+# Defaults that require no further action
 osx_defaults_values:
-  - { domain: com.apple.SoftwareUpdate, key: ScheduleFrequency, type: string, value: "1", state: present }
+
+  # Check for updates daily
+  - {
+      "domain": "com.apple.SoftwareUpdate",
+      "key": "ScheduleFrequency",
+      "type": "integer",
+      "value": 1,
+      "state": "present"
+    }

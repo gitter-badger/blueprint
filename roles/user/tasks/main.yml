@@ -11,6 +11,7 @@
 - homebrew_cask: name=dropbox state=present
 - homebrew_cask: name=evernote state=present
 - homebrew_cask: name=flux state=present
+- homebrew_cask: name=google-chrome state=present
 - homebrew_cask: name=google-drive state=present
 - homebrew_cask: name=iterm2 state=present
 - homebrew_cask: name=keka state=present
@@ -22,5 +23,10 @@
 - homebrew_cask: name=sonos state=present
 - homebrew_cask: name=totalfinder state=present
 - homebrew_cask: name=vlc state=present
-- osx_defaults: domain={{ item.domain }} key={{ item.key }} type={{ item.type }} value={{ item.value }} state={{ item.state }}
+- osx_defaults:
+      domain={{ item.domain }}
+      key={{ item.key }}
+      type={{ item.type }}
+      value={{ item.value }}
+      state={{ item.state }}
   with_items: osx_defaults_values
