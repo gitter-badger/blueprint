@@ -127,7 +127,7 @@ osx_defaults_system_ui_server_values:
       "key": "AppleInterfaceStyle",
       "type": "string",
       "value": "Dark",
-      "state": "absent"
+      "state": "present"
     }
 
   # Add a context menu item for showing web inspector in web views
