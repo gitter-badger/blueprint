@@ -2,9 +2,8 @@
 
 # Homebrew dependencies
 workstation_homebrew_dependencies:
-  - tomcat
-  - redis
-  - mongodb
+  - zsh
+  - zsh-completions
 
 
 # Homebrew Cask dependencies
