@@ -35,7 +35,6 @@ workstation_homebrew_cask_dependencies:
 # Defaults that require the UI Server to be restarted - Yosemite specific
 osx_defaults_system_ui_server_values_yosemite:
 
-  # TODO: add condition so this only runs for Yosemite
   # Use Dark theme in Yosemite
   - {
       "domain": "NSGlobalDomain",

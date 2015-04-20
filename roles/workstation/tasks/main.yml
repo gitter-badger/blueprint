@@ -18,20 +18,22 @@
   register: osx_version_patch
 
 # Set OSX defaults
-- osx_defaults:
-      domain={{ item.domain }}
-      key={{ item.key }}
-      type={{ item.type }}
-      value={{ item.value }}
-      state={{ item.state }}
+- osx_defaults: {
+                  domain: "{{item.domain}}",
+                  key:    "{{item.key}}",
+                  type:   "{{item.type}}",
+                  value:  "{{item.value}}",
+                  state:  "{{item.state}}",
+                }
   with_items: osx_defaults_values
 
 # Set OSX Yosemite defaults that require UI Server to be restarted
-- osx_defaults:
-      domain={{ item.domain }}
-      key={{ item.key }}
-      type={{ item.type }}
-      value={{ item.value }}
-      state={{ item.state }}
+- osx_defaults: {
+                  domain: "{{item.domain}}",
+                  key:    "{{item.key}}",
+                  type:   "{{item.type}}",
+                  value:  "{{item.value}}",
+                  state:  "{{item.state}}",
+                }
   with_items: osx_defaults_system_ui_server_values_yosemite
   when: osx_version_major >= "10" and osx_version_minor >= "10"

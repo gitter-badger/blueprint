@@ -7,4 +7,11 @@
     - workstation
     - dev
     - creativity
-    - { role: bbc, when: is_bbc }
+    - {
+        "role": "gaming",
+        "when": "not is_bbc"
+      }
+    - {
+        "role": "bbc",
+        "when": "is_bbc"
+      }
