@@ -9,6 +9,13 @@
 - homebrew_cask: name={{ item }} state=present
   with_items: workstation_homebrew_cask_dependencies
 
+# Get OSX version
+- shell: sw_vers | grep ProductVersion | awk '{print $2}' | awk -F. '{print $1}'
+  register: osx_version_major
+- shell: sw_vers | grep ProductVersion | awk '{print $2}' | awk -F. '{print $2}'
+  register: osx_version_minor
+- shell: sw_vers | grep ProductVersion | awk '{print $2}' | awk -F. '{print $3}'
+  register: osx_version_patch
 
 # Set OSX defaults
 - osx_defaults:
@@ -18,3 +25,13 @@
       value={{ item.value }}
       state={{ item.state }}
   with_items: osx_defaults_values
+
+# Set OSX Yosemite defaults that require UI Server to be restarted
+- osx_defaults:
+      domain={{ item.domain }}
+      key={{ item.key }}
+      type={{ item.type }}
+      value={{ item.value }}
+      state={{ item.state }}
+  with_items: osx_defaults_system_ui_server_values_yosemite
+  when: osx_version_major >= "10" and osx_version_minor >= "10"

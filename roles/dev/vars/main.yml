@@ -7,7 +7,6 @@ dev_homebrew_dependencies:
   - boot2docker
   - cmake
   - docker
-  - docker-compose
   - gist
   - git
   - hub

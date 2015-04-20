@@ -20,3 +20,11 @@ Ansible playbook for my osx configuration.
     ```sh
     $ ansible-playbook -i "local," blueprint.yml
     ```
+
+    or if using my bbc profile:
+
+    or
+
+    ```sh
+    $ ansible-playbook -i "local," blueprint.yml --extra-vars is_bbc=true
+    ```

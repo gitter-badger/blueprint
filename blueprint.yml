@@ -1,8 +1,10 @@
 ---
 - hosts: localhost
+  vars:
+      is_bbc: false
   roles:
     - common
     - workstation
     - dev
     - creativity
-    - bbc
+    - { role: bbc, when: is_bbc }

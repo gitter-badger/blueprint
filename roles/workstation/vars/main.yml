@@ -32,6 +32,19 @@ workstation_homebrew_cask_dependencies:
   - vlc
 
 
+# Defaults that require the UI Server to be restarted - Yosemite specific
+osx_defaults_system_ui_server_values_yosemite:
+
+  # TODO: add condition so this only runs for Yosemite
+  # Use Dark theme in Yosemite
+  - {
+      "domain": "NSGlobalDomain",
+      "key": "AppleInterfaceStyle",
+      "type": "string",
+      "value": "Dark",
+      "state": "present"
+    }
+
 # Defaults that require Finder to be restarted
 osx_defaults_finder_values:
 
@@ -118,16 +131,6 @@ osx_defaults_system_ui_server_values:
       "type"    : "boolean",
       "value"   : false,
       "state"   : "present"
-    }
-
-  # TODO: add condition so this only runs for Yosemite
-  # Use Dark theme in Yosemite
-  - {
-      "domain": "NSGlobalDomain",
-      "key": "AppleInterfaceStyle",
-      "type": "string",
-      "value": "Dark",
-      "state": "present"
     }
 
   # Add a context menu item for showing web inspector in web views
