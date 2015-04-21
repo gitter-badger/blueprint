@@ -36,4 +36,4 @@
                   state:  "{{item.state}}",
                 }
   with_items: osx_defaults_system_ui_server_values_yosemite
-  when: osx_version_major >= 10 and osx_version_minor >= 10
+  when: osx_version_major|int >= 10 and osx_version_minor|int >= 10

@@ -5,6 +5,7 @@ workstation_homebrew_dependencies:
   - autojump
   - zsh
   - zsh-completions
+  - zsh-syntax-highlighting
 
 
 # Homebrew Cask dependencies
