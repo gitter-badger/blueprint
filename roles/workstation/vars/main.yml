@@ -3,6 +3,7 @@
 # Homebrew dependencies
 workstation_homebrew_dependencies:
   - autojump
+  - htop
   - zsh
   - zsh-completions
   - zsh-syntax-highlighting
