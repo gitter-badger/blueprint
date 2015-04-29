@@ -2,6 +2,7 @@
 
 # Homebrew dependencies
 workstation_homebrew_dependencies:
+  - archey
   - autojump
   - htop
   - zsh
