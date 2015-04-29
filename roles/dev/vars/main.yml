@@ -2,6 +2,9 @@
 
 # Homebrew dependencies
 dev_homebrew_dependencies:
+  - autoconf
+  - autogen
+  - automake
   - awscli
   - bats
   - boot2docker
@@ -12,6 +15,7 @@ dev_homebrew_dependencies:
   - hub
   - jenv
   - jq
+  - libtool
   - maven
   - node
   - ruby
