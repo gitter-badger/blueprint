@@ -22,6 +22,7 @@ dev_homebrew_dependencies:
   - rust
   - sbt
   - scala
+  - shellcheck
   - xmlstarlet
 
 
@@ -37,3 +38,44 @@ dev_homebrew_cask_dependencies:
   - sourcetree
   - vagrant
   - virtualbox
+
+
+# Atom packages
+atom_packages_packages:
+  - atom-beautify
+  - atom-lint
+  - autocomplete-glsl
+  - autocomplete-plus
+  - distraction-free-mode
+  - file-icons
+  - file-types
+  - go-plus
+  - hex
+  - isotope-ui
+  - language-bats
+  - language-cmake
+  - language-d
+  - language-docker
+  - language-erlang
+  - language-fsharp
+  - language-groovy
+  - language-haskell
+  - language-lisp
+  - language-ocaml
+  - language-r
+  - language-racket
+  - language-rust
+  - language-scala
+  - linter
+  - linter-clang
+  - linter-rust
+  - linter-scalac
+  - linter-shellcheck
+  - merge-conflicts
+  - pretty-json
+  - scala-format
+  - script
+  - seti-syntax
+  - seti-ui
+  - syntax-settings
+  - unity-ui

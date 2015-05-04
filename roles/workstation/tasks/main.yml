@@ -12,10 +12,13 @@
 # Get OSX version
 - shell: sw_vers | grep ProductVersion | awk '{print $2}' | awk -F. '{print $1}'
   register: osx_version_major
+  changed_when: False
 - shell: sw_vers | grep ProductVersion | awk '{print $2}' | awk -F. '{print $2}'
   register: osx_version_minor
+  changed_when: False
 - shell: sw_vers | grep ProductVersion | awk '{print $2}' | awk -F. '{print $3}'
   register: osx_version_patch
+  changed_when: False
 
 # Set OSX defaults
 - osx_defaults: {
@@ -37,3 +40,13 @@
                 }
   with_items: osx_defaults_system_ui_server_values_yosemite
   when: osx_version_major.stdout|int >= 10 and osx_version_minor.stdout|int >= 10
+
+- name: zsh facts
+  shell: 'echo $SHELL'
+  register: default_shell
+  changed_when: False
+  sudo: no
+
+- name: make zsh default
+  shell:  chsh -s /bin/zsh
+  when: default_shell.stdout.find('/bin/zsh') == -1

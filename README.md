@@ -13,7 +13,7 @@ Ansible playbook for my osx configuration.
 
 3.  Install role dependencies:
     ```sh
-    $ ansible-galaxy install hnakamur.osx-defaults
+    $ ansible-galaxy install hnakamur.osx-defaults hnakamur.atom-packages
     ```
 
 4. Execute the playbook:
