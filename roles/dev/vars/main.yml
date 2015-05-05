@@ -44,17 +44,21 @@ dev_homebrew_cask_dependencies:
 atom_packages_packages:
   - atom-beautify
   - atom-lint
+  - autocomplete-clang
   - autocomplete-glsl
   - autocomplete-plus
-  - distraction-free-mode
+  - compare-files
   - file-icons
   - file-types
+  - git-tab-status
   - go-plus
   - hex
   - isotope-ui
   - language-bats
   - language-cmake
+  - language-csharp
   - language-d
+  - language-diff
   - language-docker
   - language-erlang
   - language-fsharp
@@ -68,14 +72,17 @@ atom_packages_packages:
   - language-scala
   - linter
   - linter-clang
+  - linter-js-yaml
   - linter-rust
   - linter-scalac
   - linter-shellcheck
+  - linter-xmllint
   - merge-conflicts
   - pretty-json
   - scala-format
   - script
   - seti-syntax
   - seti-ui
+  - switch-header-source
   - syntax-settings
   - unity-ui
