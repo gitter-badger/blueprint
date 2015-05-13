@@ -23,6 +23,7 @@ dev_homebrew_dependencies:
   - sbt
   - scala
   - shellcheck
+  - tmux
   - xmlstarlet
 
 
