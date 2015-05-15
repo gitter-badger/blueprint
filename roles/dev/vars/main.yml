@@ -18,6 +18,7 @@ dev_homebrew_dependencies:
   - libtool
   - maven
   - node
+  - reattach-to-user-namespace
   - ruby
   - rust
   - sbt
