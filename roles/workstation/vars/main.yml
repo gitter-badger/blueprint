@@ -4,11 +4,11 @@
 workstation_homebrew_dependencies:
   - archey
   - autojump
+  - curl
   - htop
   - zsh
   - zsh-completions
   - zsh-syntax-highlighting
-
 
 # Homebrew Cask dependencies
 workstation_homebrew_cask_dependencies:
