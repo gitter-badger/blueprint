@@ -48,7 +48,6 @@ atom_packages_packages:
   - atom-lint
   - autocomplete-clang
   - autocomplete-glsl
-  - autocomplete-plus
   - compare-files
   - file-icons
   - file-types
