@@ -32,7 +32,7 @@ dev_homebrew_dependencies:
 dev_homebrew_cask_dependencies:
   - cyberduck
   - cornerstone
-  - intellij-idea-ce
+  - intellij-idea
   - java
   - java6
   - java7
