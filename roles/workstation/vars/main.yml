@@ -30,6 +30,7 @@ workstation_homebrew_cask_dependencies:
   - music-manager
   - plug
   - radiant-player
+  - sizeup
   - skype
   - sonos
   - totalfinder
