@@ -45,17 +45,13 @@ dev_homebrew_cask_dependencies:
 # Atom packages
 atom_packages_packages:
   - atom-beautify
-  - atom-lint
   - autocomplete-clang
   - autocomplete-glsl
   - compare-files
+  - ever-notedown
   - file-icons
-  - file-types
-  - git-tab-status
   - go-plus
   - hex
-  - isotope-ui
-  - language-bats
   - language-cmake
   - language-docker
   - language-rust
@@ -71,8 +67,5 @@ atom_packages_packages:
   - pretty-json
   - scala-format
   - script
-  - seti-syntax
-  - seti-ui
   - switch-header-source
   - syntax-settings
-  - unity-ui
