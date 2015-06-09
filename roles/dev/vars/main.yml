@@ -9,6 +9,7 @@ dev_homebrew_dependencies:
   - bats
   - boot2docker
   - cmake
+  - cputhrottle
   - docker
   - gist
   - git
