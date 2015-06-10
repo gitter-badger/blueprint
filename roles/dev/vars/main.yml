@@ -56,6 +56,7 @@ atom_packages_packages:
   - language-docker
   - language-rust
   - language-scala
+  - language-syntax-settings
   - linter
   - linter-clang
   - linter-js-yaml
