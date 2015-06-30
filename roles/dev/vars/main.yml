@@ -48,7 +48,6 @@ atom_packages_packages:
   - atom-beautify
   - autocomplete-clang
   - autocomplete-glsl
-  - ever-notedown
   - file-icons
   - go-plus
   - hex
