@@ -7,10 +7,11 @@ dev_homebrew_dependencies:
   - automake
   - awscli
   - bats
-  - boot2docker
   - cmake
   - cputhrottle
   - docker
+  - docker-compose
+  - docker-machine
   - gist
   - git
   - hub
