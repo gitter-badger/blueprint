@@ -41,7 +41,7 @@ dev_homebrew_cask_dependencies:
   - slack
   - sourcetree
   - vagrant
-  - virtualbox
+  # - virtualbox
 
 
 # Atom packages
