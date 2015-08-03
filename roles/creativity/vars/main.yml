@@ -6,7 +6,7 @@ creativity_homebrew_dependencies:
 
 # Homebrew Cask dependencies
 creativity_homebrew_cask_dependencies:
-  - audacity
+  - audacity210
   - bfxr
   - blender
   - screenflick
