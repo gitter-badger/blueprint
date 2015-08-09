@@ -1,9 +1,11 @@
 ---
 
+# Install osxfuse first
+- homebrew_cask: name=osxfuse state=present
+
 # Install Homebrew dependencies
 - homebrew: name={{ item }} state=present
   with_items: workstation_homebrew_dependencies
-
 
 # Install Homebrew Cask dependencies
 - homebrew_cask: name={{ item }} state=present
