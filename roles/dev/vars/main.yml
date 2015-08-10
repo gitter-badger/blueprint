@@ -4,6 +4,7 @@
 dev_gem_dependencies:
   - bundler
   - rake
+  - rubocop
 
 # Homebrew dependencies
 dev_homebrew_dependencies:
