@@ -10,5 +10,5 @@
   with_items: dev_homebrew_cask_dependencies
 
 # Install gem dependencies
-- gem: name={{ item }} state=latest
+- gem: name={{ item }} state=latest user_install=no
   with_items: dev_gem_dependencies
