@@ -8,3 +8,7 @@
 # Install Homebrew Cask dependencies
 - homebrew_cask: name={{ item }} state=present
   with_items: dev_homebrew_cask_dependencies
+
+# Install gem dependencies
+- gem: name={{ item }} state=latest
+  with_items: dev_gem_dependencies

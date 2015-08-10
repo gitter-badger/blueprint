@@ -1,5 +1,10 @@
 ---
 
+# gem dependencies
+dev_gem_dependencies:
+  - bundler
+  - rake
+
 # Homebrew dependencies
 dev_homebrew_dependencies:
   - ansible
