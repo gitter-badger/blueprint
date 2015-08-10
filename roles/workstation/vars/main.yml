@@ -28,7 +28,6 @@ workstation_homebrew_cask_dependencies:
   - iterm2
   - keka
   - lunchy
-  - music-manager
   - plug
   - radiant-player
   - sizeup

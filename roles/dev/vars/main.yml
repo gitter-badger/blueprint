@@ -2,6 +2,7 @@
 
 # Homebrew dependencies
 dev_homebrew_dependencies:
+  - ansible
   - autoconf
   - autogen
   - automake
@@ -21,6 +22,7 @@ dev_homebrew_dependencies:
   - libtool
   - maven
   - node
+  - pkg-config
   - reattach-to-user-namespace
   - ruby
   - rust
