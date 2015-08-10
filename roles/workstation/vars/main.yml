@@ -24,6 +24,7 @@ workstation_homebrew_cask_dependencies:
   - flux
   - google-chrome
   - google-drive
+  - insomniax
   - iterm2
   - keka
   - lunchy
