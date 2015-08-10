@@ -21,6 +21,7 @@ dev_homebrew_dependencies:
   - jq
   - libtool
   - maven
+  - ninja
   - node
   - pkg-config
   - reattach-to-user-namespace
