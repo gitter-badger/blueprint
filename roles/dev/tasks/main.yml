@@ -5,7 +5,7 @@
   with_items: dev_homebrew_dependencies
 
 # Install docker-compose without recommended boot2docker polluting installation
-- homebrew: name=docker-compose state=latest install_options=--without-boot2docker,--without-docker
+- homebrew: name=docker-compose state=latest install_options=without-boot2docker,without-docker
 
 # Install Homebrew Cask dependencies
 - homebrew_cask: name={{ item }} state=present
