@@ -1,12 +1,14 @@
 ---
 
 # Install Homebrew dependencies
-- homebrew: name={{ item }} state=present
+- homebrew: name={{ item }} state=latest
   with_items: dev_homebrew_dependencies
 
+# Install docker-compose without recommended boot2docker polluting installation
+- homebrew: name=docker-compose state=latest install_options=--without-boot2docker,--without-docker
 
 # Install Homebrew Cask dependencies
-- homebrew_cask: name={{ item }} state=present
+- homebrew_cask: name={{ item }} state=latest
   with_items: dev_homebrew_cask_dependencies
 
 # Install gem dependencies
