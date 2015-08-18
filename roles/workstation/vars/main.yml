@@ -6,6 +6,7 @@ workstation_homebrew_dependencies:
   - autojump
   - curl
   - htop
+  - keybase
   - zsh
   - zsh-completions
   - zsh-syntax-highlighting
