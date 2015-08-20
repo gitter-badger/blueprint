@@ -36,6 +36,7 @@ dev_homebrew_dependencies:
   - scala
   - shellcheck
   - tmux
+  - uncrustify
   - xmlstarlet
 
 
