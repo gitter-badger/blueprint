@@ -44,7 +44,6 @@ dev_homebrew_dependencies:
 dev_homebrew_cask_dependencies:
   - cyberduck
   - cornerstone
-  - dockertoolbox
   - intellij-idea
   - java
   - java6
