@@ -8,4 +8,8 @@
 - homebrew_tap: tap={{ item }} state=present
   with_items: common_homebrew_cask_taps
 
-- homebrew: update_homebrew=yes upgrade_all=yes
+# don't upgrade_all - use state=latest for homebrew items instead
+# - homebrew: update_homebrew=yes upgrade_all=yes
+
+- homebrew: update_homebrew=yes
+
