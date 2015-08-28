@@ -7,6 +7,7 @@ workstation_homebrew_dependencies:
   - curl
   - htop
   - keybase
+  - tree
   - zsh
   - zsh-completions
   - zsh-syntax-highlighting
