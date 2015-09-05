@@ -60,6 +60,7 @@ atom_packages_packages:
   - atom-beautify
   - autocomplete-clang
   - autocomplete-glsl
+  - autocomplete-python
   - file-icons
   - go-plus
   - hex
@@ -70,6 +71,7 @@ atom_packages_packages:
   - linter
   - linter-clang
   - linter-js-yaml
+  - linter-pep8
   - linter-rust
   - linter-scalac
   - linter-shellcheck
