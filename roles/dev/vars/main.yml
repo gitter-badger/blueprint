@@ -29,6 +29,7 @@ dev_homebrew_dependencies:
   - ninja
   - node
   - pkg-config
+  - pyenv
   - reattach-to-user-namespace
   - ruby
   - rust
