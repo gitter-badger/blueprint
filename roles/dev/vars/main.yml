@@ -5,6 +5,11 @@ dev_gem_dependencies:
   - bundler
   - rake
   - rubocop
+  
+# pip dependencies
+dev_pip_dependencies:
+  - pep8
+  - matplotlib
 
 # Homebrew dependencies
 dev_homebrew_dependencies:
