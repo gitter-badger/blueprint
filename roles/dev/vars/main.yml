@@ -34,6 +34,8 @@ dev_homebrew_dependencies:
   - ninja
   - node
   - pkg-config
+  - python
+  - python3
   - reattach-to-user-namespace
   - ruby
   - rust
