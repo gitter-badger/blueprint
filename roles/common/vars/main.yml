@@ -2,9 +2,10 @@
 
 # Homebrew taps
 common_homebrew_taps:
+  - homebrew/completions
   - homebrew/dupes
   - homebrew/fuse
-  - homebrew/completions
+  - homebrew/science
   - homebrew/versions
 
 # Homebrew Cask taps

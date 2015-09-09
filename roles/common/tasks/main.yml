@@ -13,3 +13,11 @@
 
 - homebrew: update_homebrew=yes
 
+# Get brew prefix
+- name: brew prefix
+  shell: '$(which brew) --prefix'
+  register: brew_prefix
+  changed_when: False
+  sudo: no
+  always_run: yes
+  

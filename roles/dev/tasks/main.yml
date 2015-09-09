@@ -14,7 +14,7 @@
 # Install gem dependencies
 - gem: name={{ item }} state=latest user_install=no
   with_items: dev_gem_dependencies
-  
-# Install pip dependencies
-- pip: name={{ item }} state=latest
+
+# Install pip dependencies for python3
+- pip: name={{ item }} state=latest executable={{ brew_prefix.stdout }}/bin/pip3
   with_items: dev_pip_dependencies
