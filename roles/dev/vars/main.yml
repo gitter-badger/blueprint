@@ -5,7 +5,7 @@ dev_gem_dependencies:
   - bundler
   - rake
   - rubocop
-  
+
 # pip dependencies
 dev_pip_dependencies:
   - pep8
@@ -34,7 +34,6 @@ dev_homebrew_dependencies:
   - ninja
   - node
   - pkg-config
-  - pyenv
   - reattach-to-user-namespace
   - ruby
   - rust
