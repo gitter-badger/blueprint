@@ -25,7 +25,7 @@ dev_homebrew_dependencies:
   - docker-machine
   - gist
   - git
-  - golang
+  - go
   - hub
   - jenv
   - jq
