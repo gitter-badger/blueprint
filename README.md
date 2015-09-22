@@ -1,5 +1,7 @@
 # blueprint
 
+[![Join the chat at https://gitter.im/andystanton/blueprint](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/andystanton/blueprint?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Ansible playbook for my osx configuration.
 
 # Usage
